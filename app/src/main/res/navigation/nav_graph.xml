@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            app:startDestination="@id/root">
+    <fragment android:id="@+id/root" android:name="com.chinwe.sideslipback.BlankFragment"
+              tools:layout="@layout/fragment_blank">
+        <action android:id="@+id/action_root_to_next1" app:destination="@id/next1"/>
+    </fragment>
+    <fragment android:id="@+id/next1" android:name="com.chinwe.sideslipback.BlankFragment2"
+              tools:layout="@layout/fragment_blank_fragment2">
+        <action android:id="@+id/action_next1_to_next2" app:destination="@id/next2"/>
+    </fragment>
+    <fragment android:id="@+id/next2" android:name="com.chinwe.sideslipback.BlankFragment3"
+              tools:layout="@layout/fragment_blank_fragment3"/>
+</navigation>

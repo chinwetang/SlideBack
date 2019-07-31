@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.chinwe.lib_slide_back">
+    <application>
+
+        <provider
+                android:name="com.chinwe.lib_slide_back.InitProvider"
+                android:authorities="${applicationId}.sideslip-back-init-provider"
+                android:exported="false"
+                android:multiprocess="true"/>
+    </application>
+
+</manifest>
